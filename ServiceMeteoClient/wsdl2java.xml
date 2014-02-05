@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <project name="cxf wsdl2java" basedir="." default="cxfWSDLToJava">   
    <property name="cxf.home" location ="C:/Users/mirette/apache-cxf-2.7.0"/>
-   <property name="wsdl" value="http://www.webservicex.net/globalweather.asmx?WSDL"/>
+   <property name="wsdl" value="http://localhost:8090/weatherservice?wsdl"/>
 	
    <path id="cxf.classpath">
       <fileset dir="${cxf.home}/lib">
