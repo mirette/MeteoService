@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:meteoService="http://meteoService" xmlns:www.webserviceX.NET="http://www.webserviceX.NET">
+  <process name="meteoService:MeteoService">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="meteoService:MeteoServiceProcessPort" port="MeteoServiceProcessPort"/>
+    </provide>
+    <invoke partnerLink="GetWeather">
+      <service name="www.webserviceX.NET:GlobalWeather" port="GlobalWeatherSoap"/>
+    </invoke>
+    <invoke partnerLink="GetWeatherPL">
+      <service name="www.webserviceX.NET:GlobalWeather" port="GlobalWeatherSoap"/>
+    </invoke>
+  </process>
+</deploy>
