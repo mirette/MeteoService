@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:completerVille="http://completerVille" xmlns:websamples.countryinfo="http://www.oorsprong.org/websamples.countryinfo">
+  <process name="completerVille:CompleterVille">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="completerVille:CompleterVilleService" port="CompleterVillePort"/>
+    </provide>
+    <invoke partnerLink="CountryInfo">
+      <service name="websamples.countryinfo:CountryInfoService" port="CountryInfoServiceSoap"/>
+    </invoke>
+  </process>
+</deploy>

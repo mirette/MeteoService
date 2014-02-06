@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CompleterVille/bpelContent/VerifierVille.bpel&apos; to &apos;CompleterVille&apos;" description="Rename resource &apos;VerifierVille.bpel&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="bpelContent/VerifierVille.bpel" name="CompleterVille" stamp="1391687630460" updateReferences="true"/>
+</session>
